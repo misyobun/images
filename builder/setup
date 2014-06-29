@@ -3,6 +3,10 @@
 # base
 skip("base", "base/");
 
+# android
+build("android:r22.6.2", "android/android_r22.6.2")
+build("android:r23", "android/android_r23")
+
 # clojure
 build("lein", "clojure/lein/");
 

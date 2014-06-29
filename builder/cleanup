@@ -1,5 +1,9 @@
 #!/usr/bin/perl
 
+# android
+remove("android:r22.6.2")
+remove("android:r23")
+
 # clojure
 remove("lein");
 
