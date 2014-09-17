@@ -4,7 +4,8 @@ WORKDIR /home/ubuntu
 USER ubuntu
 ADD android.sh /etc/drone.d/
 
-RUN sudo apt-get -y install lib32stdc++6 lib32z1 && \
+RUN sudo apt-get update && \
+    sudo apt-get -y install lib32stdc++6 lib32z1 && \
     wget http://dl.google.com/android/android-sdk_r22.6.2-linux.tgz && \
     sudo tar -C /usr/local -xzf android-sdk_r22.6.2-linux.tgz && \
     sudo chown -R ubuntu:ubuntu /usr/local/android-sdk-linux && \
